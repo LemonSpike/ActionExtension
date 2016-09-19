@@ -12,7 +12,34 @@
 		4EB2DD241D90395C00F020C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EB2DD221D90395C00F020C1 /* Main.storyboard */; };
 		4EB2DD261D90395C00F020C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EB2DD251D90395C00F020C1 /* Assets.xcassets */; };
 		4EB2DD291D90395C00F020C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EB2DD271D90395C00F020C1 /* LaunchScreen.storyboard */; };
+		4EB2DD371D90398C00F020C1 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB2DD361D90398C00F020C1 /* ActionViewController.swift */; };
+		4EB2DD3A1D90398C00F020C1 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EB2DD381D90398C00F020C1 /* MainInterface.storyboard */; };
+		4EB2DD3E1D90398C00F020C1 /* EnlargeExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4EB2DD341D90398C00F020C1 /* EnlargeExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4EB2DD3C1D90398C00F020C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EB2DD131D90395C00F020C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4EB2DD331D90398C00F020C1;
+			remoteInfo = EnlargeExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4EB2DD421D90398C00F020C1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4EB2DD3E1D90398C00F020C1 /* EnlargeExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4EB2DD1B1D90395C00F020C1 /* ActionExtensionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActionExtensionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +49,21 @@
 		4EB2DD251D90395C00F020C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EB2DD281D90395C00F020C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EB2DD2A1D90395C00F020C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EB2DD341D90398C00F020C1 /* EnlargeExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EnlargeExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EB2DD361D90398C00F020C1 /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		4EB2DD391D90398C00F020C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		4EB2DD3B1D90398C00F020C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4EB2DD181D90395C00F020C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EB2DD311D90398C00F020C1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				4EB2DD1D1D90395C00F020C1 /* ActionExtensionDemo */,
+				4EB2DD351D90398C00F020C1 /* EnlargeExtension */,
 				4EB2DD1C1D90395C00F020C1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				4EB2DD1B1D90395C00F020C1 /* ActionExtensionDemo.app */,
+				4EB2DD341D90398C00F020C1 /* EnlargeExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +104,16 @@
 			path = ActionExtensionDemo;
 			sourceTree = "<group>";
 		};
+		4EB2DD351D90398C00F020C1 /* EnlargeExtension */ = {
+			isa = PBXGroup;
+			children = (
+				4EB2DD361D90398C00F020C1 /* ActionViewController.swift */,
+				4EB2DD381D90398C00F020C1 /* MainInterface.storyboard */,
+				4EB2DD3B1D90398C00F020C1 /* Info.plist */,
+			);
+			path = EnlargeExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +124,34 @@
 				4EB2DD171D90395C00F020C1 /* Sources */,
 				4EB2DD181D90395C00F020C1 /* Frameworks */,
 				4EB2DD191D90395C00F020C1 /* Resources */,
+				4EB2DD421D90398C00F020C1 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4EB2DD3D1D90398C00F020C1 /* PBXTargetDependency */,
 			);
 			name = ActionExtensionDemo;
 			productName = ActionExtensionDemo;
 			productReference = 4EB2DD1B1D90395C00F020C1 /* ActionExtensionDemo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		4EB2DD331D90398C00F020C1 /* EnlargeExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EB2DD3F1D90398C00F020C1 /* Build configuration list for PBXNativeTarget "EnlargeExtension" */;
+			buildPhases = (
+				4EB2DD301D90398C00F020C1 /* Sources */,
+				4EB2DD311D90398C00F020C1 /* Frameworks */,
+				4EB2DD321D90398C00F020C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EnlargeExtension;
+			productName = EnlargeExtension;
+			productReference = 4EB2DD341D90398C00F020C1 /* EnlargeExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +164,11 @@
 				ORGANIZATIONNAME = "Pranav Kasetti";
 				TargetAttributes = {
 					4EB2DD1A1D90395C00F020C1 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = C3BX32XR8J;
+						ProvisioningStyle = Automatic;
+					};
+					4EB2DD331D90398C00F020C1 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = C3BX32XR8J;
 						ProvisioningStyle = Automatic;
@@ -115,6 +189,7 @@
 			projectRoot = "";
 			targets = (
 				4EB2DD1A1D90395C00F020C1 /* ActionExtensionDemo */,
+				4EB2DD331D90398C00F020C1 /* EnlargeExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +205,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4EB2DD321D90398C00F020C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EB2DD3A1D90398C00F020C1 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -142,7 +225,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4EB2DD301D90398C00F020C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EB2DD371D90398C00F020C1 /* ActionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4EB2DD3D1D90398C00F020C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4EB2DD331D90398C00F020C1 /* EnlargeExtension */;
+			targetProxy = 4EB2DD3C1D90398C00F020C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4EB2DD221D90395C00F020C1 /* Main.storyboard */ = {
@@ -159,6 +258,14 @@
 				4EB2DD281D90395C00F020C1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4EB2DD381D90398C00F020C1 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4EB2DD391D90398C00F020C1 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -260,6 +367,7 @@
 		4EB2DD2E1D90395C00F020C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C3BX32XR8J;
 				INFOPLIST_FILE = ActionExtensionDemo/Info.plist;
@@ -273,12 +381,39 @@
 		4EB2DD2F1D90395C00F020C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C3BX32XR8J;
 				INFOPLIST_FILE = ActionExtensionDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pranav.kasetti.ActionExtensionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		4EB2DD401D90398C00F020C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = C3BX32XR8J;
+				INFOPLIST_FILE = EnlargeExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pranav.kasetti.ActionExtensionDemo.EnlargeExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4EB2DD411D90398C00F020C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = C3BX32XR8J;
+				INFOPLIST_FILE = EnlargeExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pranav.kasetti.ActionExtensionDemo.EnlargeExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -300,6 +435,14 @@
 			buildConfigurations = (
 				4EB2DD2E1D90395C00F020C1 /* Debug */,
 				4EB2DD2F1D90395C00F020C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4EB2DD3F1D90398C00F020C1 /* Build configuration list for PBXNativeTarget "EnlargeExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EB2DD401D90398C00F020C1 /* Debug */,
+				4EB2DD411D90398C00F020C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
