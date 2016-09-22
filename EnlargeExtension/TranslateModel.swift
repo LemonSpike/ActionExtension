@@ -13,12 +13,16 @@ class TranslateModel: NSObject {
     
     func translateText(language: String, text: String) {
         
-        Alamofire.request("https://api-platform.systran.net/translation/text/translate", parameters: ["key":"e1c5251c-4b1c-4808-846f-9fbd8e60a00e","source":"auto","target":language,"input":text], encoding: URLEncoding.default, headers: nil).responseJSON { response in
+        Alamofire.request("https://api-platform.systran.net/translation/text/translate", parameters: ["key":"e1c5251c-4b1c-4808-846f-9fbd8e60a00e","source":"auto","target":language,"input":text]).responseJSON { response in
+            print(response)
             DispatchQueue.main.async {
                 let translateResponse = response.result.value
                 print(translateResponse)
+                
             }
         }
+        
+        
     }
     
 }

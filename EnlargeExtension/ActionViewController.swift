@@ -27,6 +27,7 @@ class ActionViewController: UIViewController {
                     
                     itemProvider.loadItem(forTypeIdentifier: kUTTypePlainText as String, options: nil, completionHandler: { (text, error) in
                         if let text = text as? String {
+                            print(text)
                             self.model.translateText(language: "fr", text: text)
                             //self.textView.text = text
                         }
