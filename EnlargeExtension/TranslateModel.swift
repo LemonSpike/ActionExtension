@@ -34,14 +34,12 @@ class TranslateModel: NSObject {
         }
     }
     
-    func translateText(language: String, text: String) {
+    func translateText(language: String, text: String, completionHandler:@escaping (_ data: String) -> ()) -> () {
         bypassAuthentication()
         Alamofire.request("https://api-platform.systran.net/translation/text/translate", parameters: ["key":"e1c5251c-4b1c-4808-846f-9fbd8e60a00e","source":"auto","target":language,"input":text]).responseJSON { response in
             print(response)
-            DispatchQueue.main.async {
                 let translateResponse = response.result.value
-                print(translateResponse)
-            }
+                completionHandler(((translateResponse as! NSDictionary).value(forKeyPath: "outputs.output")! as! NSArray)[0] as! String)
         }
         
         
